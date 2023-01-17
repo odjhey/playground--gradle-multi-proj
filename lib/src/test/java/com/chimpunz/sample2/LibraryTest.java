@@ -4,10 +4,26 @@
 package com.chimpunz.sample2;
 
 import org.junit.jupiter.api.Test;
+import org.w3c.dom.Document;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
+    @Test
+    void sometates() {
+        Library classUnderTest = new Library();
+
+        try {
+            Document doc = classUnderTest.create();
+            classUnderTest.print(doc);
+        } catch (Exception e) {
+        }
+
+        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+    }
+
+    @Test
+    void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
