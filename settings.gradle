@@ -9,3 +9,4 @@
 
 rootProject.name = 'sample-gradle-proj-java-lib'
 include('lib')
+include('lib2')
