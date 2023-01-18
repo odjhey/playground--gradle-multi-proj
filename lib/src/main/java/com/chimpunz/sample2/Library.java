@@ -21,7 +21,9 @@ import sample.gradle.proj.groovy.lib.*;
 public class Library {
     public boolean someLibraryMethod() {
         sample.gradle.proj.groovy.lib.Library l = new sample.gradle.proj.groovy.lib.Library();
-        l.some239bool();
+        System.out.println("------- >>>");
+
+        System.out.println("---------- >>> " + l.some239bool());
         return true;
     }
 

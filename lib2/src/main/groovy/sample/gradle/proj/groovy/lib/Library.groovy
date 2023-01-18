@@ -7,7 +7,7 @@ class Library {
     boolean someLibraryMethod() {
         true
     }
-    boolean some239bool() {
-        true
+    String some239bool() {
+        "x,,. ., asdlkfj asdflh"
     }
 }
