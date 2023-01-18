@@ -16,9 +16,12 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import sample.gradle.proj.groovy.lib.*;
 
 public class Library {
     public boolean someLibraryMethod() {
+        sample.gradle.proj.groovy.lib.Library l = new sample.gradle.proj.groovy.lib.Library();
+        l.some239bool();
         return true;
     }
 
